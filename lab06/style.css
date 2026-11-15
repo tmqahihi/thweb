@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: #1f2937; background: #f3f6fb; font: 16px/1.55 Arial, Helvetica, sans-serif; }
+.container { max-width: 1050px; margin: 28px auto; padding: 0 18px; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+nav a { color: #174ea6; background: #fff; border: 1px solid #dbe5f3; border-radius: 8px; padding: 8px 11px; text-decoration: none; font-size: 14px; }
+nav a:hover { background: #e8f1ff; }
+.card { background: #fff; border-radius: 12px; padding: 22px; margin: 16px 0; border: 1px solid #e0e7ee; box-shadow: 0 2px 8px rgba(10,35,70,.04); }
+h1 { font-size: 25px; margin: 2px 0 12px; }
+h2 { font-size: 19px; color: #155aa0; margin: 0 0 12px; }
+p { margin: 10px 0; }
+.form-grid { display: grid; grid-template-columns: 180px minmax(0,1fr); gap: 12px; align-items: center; }
+label { font-weight: 600; }
+input[type=text], input[type=password], textarea, select { border: 1px solid #cbd5e1; border-radius: 7px; padding: 10px; font: inherit; width: 100%; }
+textarea { min-height: 110px; resize: vertical; }
+button { background: #1767b5; color: white; border: 0; border-radius: 8px; padding: 11px 20px; cursor: pointer; font: inherit; font-weight: 600; }
+button:hover { background: #0d4e90; }
+.error { padding: 12px; background: #fff0f0; border-left: 4px solid #da4141; margin: 10px 0; }
+.success { padding: 12px; background: #ecfdf3; border-left: 4px solid #22a66b; margin: 10px 0; }
+.note { background: #eef5ff; border-left: 4px solid #448ee0; padding: 12px; margin: 12px 0; }
+code, pre { font-family: Consolas, Monaco, monospace; }
+pre { white-space: pre-wrap; word-break: break-word; background: #f5f7fa; padding: 15px; border: 1px solid #dce3ea; border-radius: 8px; max-height: 300px; overflow: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th,td { text-align: left; padding: 9px 11px; border: 1px solid #d8e2ed; vertical-align: top; overflow-wrap: anywhere; }
+th { background: #eaf2ff; }
+.srclink { overflow-wrap: anywhere; }
+.choices { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+.small { color: #526174; font-size: 14px; }
+@media (max-width: 650px) { .form-grid { grid-template-columns:1fr; } .card { padding: 16px; } }
